@@ -17,10 +17,19 @@
   <meta name="description" content="">
   <meta name="author" content="AimiP02">
   <meta name="keywords" content="">
-  <title>标签 - AimiP02</title>
+  <title>题解 - AimiP02</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -42,7 +51,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -130,7 +139,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/AimiP02/IMG/75734733.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -159,8 +168,8 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center tagcloud">
-  <a href="/tags/Galgame/" style="font-size: 15px; color: #bbe">Galgame</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 30px; color: #337ab7">动画</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 30px; color: #337ab7">杂谈</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 15px; color: #bbe">题解</a>
+<div class="page-content">
+  
 </div>
 
               </div>
@@ -278,7 +287,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "标签&nbsp;",
+        "题解&nbsp;",
       ],
       cursorChar: "|",
       typeSpeed: 70,
@@ -292,6 +301,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
