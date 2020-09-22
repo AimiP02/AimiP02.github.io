@@ -17,10 +17,19 @@
   <meta name="description" content="">
   <meta name="author" content="AimiP02">
   <meta name="keywords" content="">
-  <title>分类 - 代码 - AimiP02</title>
+  <title>计算机 - AimiP02</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css" />
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -130,7 +139,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/AimiP02/IMG/80056132.png') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -159,31 +168,9 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
-  <hr>
-  
-    
-      
-      <p class="h5">2020</p>
-    
-    <a href="/2020/09/22/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%88%9D%E6%8E%A2/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">正则表达式初探</span>
-      <span style="float: right;">09-22</span>
-    </a>
-  
-    
-      
-      <p class="h5">2019</p>
-    
-    <a href="/2019/01/26/%E6%A8%A1%E6%9D%BF/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">模板整理</span>
-      <span style="float: right;">01-26</span>
-    </a>
+<div class="page-content">
   
 </div>
-
-
 
               </div>
             </div>
@@ -300,7 +287,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "分类 - 代码&nbsp;",
+        "计算机&nbsp;",
       ],
       cursorChar: "|",
       typeSpeed: 70,
@@ -314,6 +301,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 
