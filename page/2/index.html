@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="L@in">
   <meta name="keywords" content="">
-  <title>归档 - L@in</title>
+  <title>L@in</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -42,7 +42,7 @@
 
 
 <body>
-  <header style="height: 90vh;">
+  <header style="height: 100vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -142,7 +142,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/AimiP02/My-imgHome/20210310180710.png') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/AimiP02/My-imgHome/20210310181037.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -168,27 +168,78 @@
     
       <div class="container nopadding-md">
         <div class="py-5" id="board"
-          >
+          style=margin-top:0>
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 11 篇文章</p>
-  <hr>
-  
+
+  <div class="row mx-auto index-card">
     
-      
-      <p class="h5">2021</p>
     
-    <a href="/2021/01/03/2020%E5%B9%B4%E6%80%BB%E7%BB%93/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">2020年总结</span>
-      <span style="float: right;">01-03</span>
-    </a>
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/01/26/%E6%A8%A1%E6%9D%BF/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/Irisgakki/cdn@1.0/img/1492411320615.jpg" srcset="/img/loading.gif" alt="模板整理">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/2019/01/26/%E6%A8%A1%E6%9D%BF/">模板整理</a>
+
+      <a href="/2019/01/26/%E6%A8%A1%E6%9D%BF/" class="index-excerpt">
+        
+        
+          
+        
+        <div>预计可能会有：
+数论：快速幂，gcd，exgcd，逆元，Lucas定理，CRT，BSGS，欧拉函数，线性筛，矩阵乘法，FFT
+图论：最短路，最小生成树，最大流，费用流，有向图的强连通分量，无向图的边的双联通分量
+树：LCA，树分治，树链剖分
+数据结构：树状数组，线段树，Splay，Treap，LCT，莫队，左偏树
+先写一部分吧，反正大多数也不会，会写多少写多少吧…</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-01-26
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E4%BB%A3%E7%A0%81/">代码</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
   
-</div>
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
 
@@ -307,7 +358,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "认真学习二次元中...&nbsp;",
       ],
       cursorChar: "|",
       typeSpeed: 70,
